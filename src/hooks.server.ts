@@ -1,6 +1,6 @@
 import type { Handle } from '@sveltejs/kit';
-import { createServerClient } from '@supabase/auth-helpers-sveltekit';
 import { paraglideMiddleware } from '$lib/paraglide/server';
+import { createServerClient } from '@supabase/ssr';
 
 // 1. Wrap Paraglide first
 const handleParaglide: Handle = ({ event, resolve }) =>
